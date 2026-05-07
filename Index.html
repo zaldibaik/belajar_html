@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Zaldi</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        /* HEADER */
+        header{
+            background: linear-gradient(135deg,#4f46e5,#7c3aed);
+            color: white;
+            padding: 20px 10%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            margin-bottom: 10px;
+        }
+
+        nav{
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* HERO */
+        .hero{
+            text-align: center;
+            padding: 70px 20px;
+            padding: 0%;
+            margin: 0%;
+            width: 100%;
+            position: relative;
+        }
+
+        .hero h2{
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            outline-offset: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+
+        .hero p{
+            color: #ffffff;
+            font-size: 18px;
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .hero-img{
+            position: absolute;
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.8;
+            box-shadow: #111827;
+        }
+
+        /* ARTICLE */
+        .article-container{
+            display: flex;
+            justify-content: center;
+            padding: 50px 10%;
+        }
+
+        .article{
+            background: white;
+            max-width: 850px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .article:hover{
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transition: 0.4s;
+        }
+
+        .article img{
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .article h3{
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .article p{
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background: #372fcf;
+        }
+
+        /* FOOTER */
+        footer{
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+
+            .hero h2{
+                font-size: 30px;
+            }
+
+            .article{
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Website Zaldi</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profil</a>
+        </nav>
+
+    </header>
+        <img class="hero-img" src="https://picsum.photos/900/400" alt="hero">
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Selamat Datang di Home</h2>
+
+        <p>
+            Selamat datang di home zaldi.
+        </p>
+
+    </section>
+
+    <section class="article-container">
+
+        <div class="article">
+
+            <img src="https://picsum.photos/900/400" alt="Artikel Image">
+
+            <h3>keindahan alam</h3>
+
+            <p>
+                Keindahan alam adalah anugerah yang luar biasa dari alam semesta. Dari pegunungan yang menjulang tinggi hingga pantai yang memukau, keindahan alam memikat hati dan memberikan ketenangan bagi jiwa. Setiap sudut bumi menyimpan keajaiban alam yang menakjubkan, seperti air terjun yang mengalir deras, hutan yang rimbun, dan langit yang penuh bintang. Keindahan alam tidak hanya memanjakan mata, tetapi juga menginspirasi kreativitas dan memberikan rasa syukur atas keberadaan kita di dunia ini.
+            </p>
+            <a href="/artikel.html" class="btn">
+                Baca Selengkapnya
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Website Zaldi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```

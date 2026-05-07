@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Zaldi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            padding: 20px 10%;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: rgb(255, 255, 255);
+            padding: 0%;
+            margin: 0%;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #4f46e5;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .hero-img {
+            position: absolute;
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            height: 80%;
+            z-index: -1;
+            opacity: 0.8;
+            box-shadow: #111827;
+        }
+
+        /* CARD CONTAINER */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px 10%;
+        }
+
+        /* CARD */
+        .card {
+            width: 80%;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.4s;
+            display: flex;
+            margin: 20px auto;
+            margin-bottom: 100px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            padding: 20px;
+            border-radius: 100%;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .card-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card-button:hover {
+            background: #372fcf;
+        }
+
+        .text-form {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .text-form-decripsi {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .text-title {
+            color: #222;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .card {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card img {
+                width: 180px;
+                height: 180px;
+                margin: 20px auto;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Website artikel Zaldi</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+    </header>
+    <img class="hero-img" src="https://picsum.photos/900/400" alt="Artikel Image">
+
+
+
+
+    <!-- CARD -->
+    <section class="container">
+
+        <div class="card">
+
+            <img src="https://picsum.photos/400/300" alt="Image">
+            
+            <div class="card-content">
+                <h2 class="text-title">Profile</h2>
+                <p class="text-form"><b>Nama:</b> Zaldi</p>
+                <p class="text-form"><b>Email:</b> zaldi@example.com</p>
+                <p class="text-form"><b>Phone:</b> 08123456789</p>
+                <p class="text-form"><b>NIM:</b> 73255604020</p>
+                <p class="text-form"><b>Prodi:</b> Rekayasa sistem komputer</p>
+                <p class="text-form"><b>Umur:</b> 20 tahun</p>
+                <p class="text-form"><b>Alamat:</b> Jl. Merdeka No. 123</p>
+                
+
+                <p class="text-form-decripsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+                    voluptates, hic officiis tempore aliquam aut nam, cum recusandae reprehenderit maxime voluptatibus
+                    saepe eum! Inventore nihil non quisquam nemo ipsum rem?</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Website Zaldi. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
